@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Logo_TecSalud_vih.png" rel="icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<!---------------BODY------------------->
+<body>
+
+    <!---------------HEADER------------------->
+    <header>
+
+     <!-----------------Ejemplo de botones----------------------->
+    <section id="ejemplo de botones">
+    <h1>Ejemplo</h1>
+    <button class="button button"> Click aqui </button>
+    <button class="button button-secondary"> otro boton </button>
+    </section>
+
+        <a href="#inicio" class="logo">
+                <img class="logo" src="img/Logo_TecSalud_vih.png" width="700px" alt="ns">
+        </a>
+        <nav>
+            <a href="#info"> INFORMACION </a>
+            <a href="#test"> TESTIMONIOS </a>
+            <a href="#video"> VIDEO </a>
+            <a href="#galeria"> GALERIA </a>
+            <a href="#enti"> ENTIDADES </a>
+        </nav>
+        <button class="menu-btn" aria-label=""> ☰ </button>
+
+        
+    </header>
+
+    <!--------------SLIDER-------------->
+
+    <Section class="slider" id="inicio">
+        <div class ="slide activo slide-1">
+            <img src="img/Slide_1.png" alt="El VIH no distingue de edad" class="slide-bg">
+            <div class="slide-overlay">
+                <div class="slide-contenido">
+                    <h2> Rompe paradrigmas <span> Estigma </span> </h2>
+                    <p> Romper el esquema sobre el VIH es reemplazar los prejuicios por información, respeto e inclusión hacia quienes viven con esta condición. </p>
+                    <a href="#info" class="btn"> Conoce Más </a>
+                </div>
+            </div>
+        </div>
+
+        <div class ="slide activo slide-2">
+            <img src="img/Slide_2.png" alt="Prevenciòn es vida" class="slide-bg">
+            <div class="slide-overlay">
+                <div class="slide-contenido">
+                    <h2> Cosas cososamente cososas <span> aca tambien </span> </h2>
+                    <p> Informarse, cuidarse y actuar responsablemente protege nuestra salud y la de quienes nos rodean. </p>
+                    <a href="#entid" class="btn"> Busca ayuda </a>
+                </div>
+            </div>
+        </div>
+
+        <div class ="slide activo slide-3">
+            <img src="img/Slide_3.png" alt="Historias que hablan" class="slide-bg">
+            <div class="slide-overlay">
+                <div class="slide-contenido">
+                    <h2> Cosas cososamente cososas <span> aca tambien </span> </h2>
+                    <p> Los testimonios nos muestran experiencias reales que inspiran, educan y ayudan a comprender mejor la realidad de las personas que viven con VIH. </p>
+                    <a href="#testimo" class="btn"> Conoce testimonios </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-flechas">
+            <button class="flecha" onclick="anteriorSlide()"> &#8592; </button> 
+            <button class="flecha" onclick="siguienteSlide()"> &#8594; </button>
+
+        </div>
+        <div class="slider-puntos">
+            <button class="punto activo" onclink="mostrarSlide(0)">  </button>
+            <button class="punto" onclink="mostrarSlide(1)">  </button>
+            <button class="punto" onclink="mostrarSlide(2)">  </button>
+            <button class="punto" onclink="mostrarSlide(3)">  </button>
+        </div>
+    </Section>
+
+<!------------------Informacion------------------------>
+<section id="info">
+    <div class="titulo-seccion">
+        <h2> ¿Qué debes saber sobre el VIH? </h2>
+        <div class="linea"> </div>
+        <p> Información sobre el VIH para los jovenes colombianos </p> 
+    </div>  
+   
+   
+    <div class="fotos-grid">
+        <div class="fotos-card">
+            <div class="imagen bg-1"></div>
+            <div class="info">
+                <img src="img/img1.png" alt="" class="foto-img">
+            </div>
+            <h3> ¿Ques es el VIH? </h3>
+            <p> El VIH es un virus que debilita el sistema inmunitario. No tiene cura, pero con tratamiento se controla por completo y se lleva una vida normal. </p>
+        </div>
+    </div>
+
+    <div class="fotos-grid">
+        <div class="fotos-card">
+            <div class="imagen bg-2"></div>
+            <div class="info">
+                <img src="img/img2.png" alt="" class="foto-img">
+            </div>
+            <h3> ¿Como se contgia? </h3>
+            <p> El VIH se transmite principalmente por relaciones sexuales sin preservativo, compartir jeringas o de madre a hijo durante el embarazo o lactancia.
+                No se contagia por saliva, besos, abrazos ni por compartir objetos cotidianos. </p>
+        </div>
+    </div>
+
+    <div class="fotos-grid">
+        <div class="fotos-card">
+            <div class="imagen bg-3"></div>
+            <div class="info">
+                <img src="img/img3.png" alt="" class="foto-img">
+            </div>
+            <h3> ¿Cúales son sus sintomas? </h3>
+            <p> En las primeras semanas, el VIH puede causar una gripe leve, pero luego pasa años sin dar ningún síntoma mientras debilita las defensas en silencio, por lo que la única forma de detectarlo es con una prueba de sangre. </p>
+        </div>
+    </div>
+
+    <div class="fotos-grid">
+        <div class="fotos-card">
+            <div class="imagen bg-4"></div>
+            <div class="info">
+                <img src="img/img4.png" alt="" class="foto-img">
+            </div>
+            <h4> ¿Como prevenir el Vih? </h4>
+            <p> El VIH se previene usando preservativo, no compartiendo jeringas y mediante medicamentos como la PrEP (pastilla diaria preventiva) o la PEP (tratamiento de emergencia post-exposición</p>
+        </div>
+    </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-top"> Indicador </th>
+                    <th scope="col" class="table-top">Cifra mundial (2024)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="table-danger"> Personas que viven con VIH </th>
+                    <td class="table-danger"> 40,8 millones </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-danger"> Nuevas infecciones por VIH </th>
+                    <td class="table-danger"> 1,3 millones </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-danger"> Muertes relacionadas con el sida </th>
+                    <td class="table-danger"> 630.000 </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-danger"> Personas con tratamiento antirretroviral </th>
+                    <td class="table-danger"> 31,6 millones </td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div style="width: 50%; margin: au  tro;">
+        <canvas id="myChart"></canvas>
+    </div> 
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Personas con VIH', 'En Tratamiento', 'Nuevas Infecciones', 'Muertes Anuales',],
+                datasets: [{
+                    label: 'Estadísticas del VIH',
+                    data: [180, 137, 40, 25,],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            }, 
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+               }   
+            } 
+        });
+    </script>
+
+
+    <!-- Sección donde irá el chatbot en tu index.html -->
+<div class="contenedor-chat" style="width: 100%; max-width: 800px; margin: 20px auto;">
+  <iframe 
+    src="http://localhost:8501" 
+    width="100%" 
+    height="600px" 
+    style="border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</iframe>
+
+
+</div>
+</section>
+<!-------------------------Testimonio ------------------------------>
+<section id="test">
+    <div class="titulo-seccion">
+    <h2> testimonios </h2>
+    <div class="linea"></div>
+    <p> En esta sección encontrarás testimonios de personas afectadas por el VIH. Sus historias buscan crear conciencia, promover la empatía y ayudar a eliminar los prejuicios. </p>
+    </div>
+
+    <div class="testimonios-grid">
+        <div class="testimonio">
+            <div class="comillas"></div>
+            <p>24 años:
+            "Cuando recibí el diagnóstico sentí mucho miedo, pero con el apoyo de mi familia y el tratamiento aprendí que puedo seguir viviendo y cumpliendo mis metas."</p>
+        </div>
+        <div class="autor">
+            <div class="avatar"> L </div>
+            <div class="autor-info">
+                <span> Laura, 24 años</span>
+                <span> Barranquilla, Atlantico </span>
+            </div>
+        </div>
+    </div>
+
+        <div class="testimonio">
+            <div class="comillas"></div>
+            <p> 21 años:
+"Mi diagnóstico me enseñó a valorar cada día. Con responsabilidad y apoyo he demostrado que el VIH no define quién soy."</p>
+        <div class="autor">
+            <div class="avatar"> A </div>
+            <div class="autor-info">
+                <span> Andres, 21 años</span>
+                <span> Tunja, Boyaca </span>
+            </div>
+        </div>
+
+        <div class="testimonio">
+            <div class="comillas"></div>
+            <p> 27 años:
+"Al conocer mi diagnóstico pensé que todo había cambiado. Con el tiempo entendí que, con tratamiento y el apoyo de quienes me quieren, puedo llevar una vida plena y seguir luchando por mis sueños."</p>
+        <div class="autor">
+            <div class="avatar"> S </div>
+            <div class="autor-info">
+                <span> Sofia, 27 años</span>
+                <span> Bogotá, Cundinamarca </span>
+            </div>
+        </div>
+</section>
+
+<!-------------------------Video-------------------------------->
+<section id="video">
+    <div class="titulo-seccion">
+        <h2> Video Informativo </h2> 
+        <Div class="linea"></Div>
+        <p> Aprende mas sobre el VIH en Colombia </p>
+    </div>
+
+    <div class="video-wrapper"></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BGPe8bqhTQk?si=zrJ1hjAsnSGpAxvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+
+<!-----------------------GALERIA--------------------------------->
+<section id="galeria">
+   
+<div class="titulo-seccion">
+        <h2> GALERIA DE IMAGENES </h2> 
+        <Div class="linea"></Div>
+        <p>Imagenes de campañas y acciones de prevencion al VIH </p>
+</div>
+
+<div class="galeria-grid">
+
+    <div class="galeria-item" data-src="img/gal1.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g1">
+            <img src="img/gal1.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+</div>
+
+  <div class="galeria-item" data-src="img/gal2.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g2">
+            <img src="img/gal2.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+    <div class="galeria-item" data-src="img/gal3.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g3">
+            <img src="img/gal3.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+    <div class="galeria-item" data-src="img/gal4.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g4">
+            <img src="img/gal4.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+    <div class="galeria-item" data-src="img/gal5.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g5">
+            <img src="img/gal5.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+    <div class="galeria-item" data-src="img/gal6.png" data-alt="Campaña de prevencion VIH">
+        <div class="img-placeholder g6">
+            <img src="img/gal6.png" alt="">
+        </div>
+        <div class="overlay"> 🔍 </div>
+    </div>
+
+    <!----------------LIGHTBOX-------------------->
+</section>
+<div class="lightbox"  id="linghtbox">
+<button class="lightbox-cerrar"  onclick="cerrarLinghtbox()">X</button>
+    <div class="linghtbox-contenido" > 
+     <img class="linghtbox-img-real" src="linghtbox-img-real" alt="">
+    </div>
+</div>
+
+<!-----------------------ENTIDADES----------------------------->
+<section id="ENTIDADES">
+   
+<div class="titulo-seccion">
+        <h2> ENTIDADES </h2> 
+        <Div class="linea"></Div>
+        <p>Entidades de prevencion en Colombia </p>
+</div>
+
+<div class="entidades-grid">
+  <a href="https://fundacioneudes.co/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION EUDES </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+
+</div>
+
+
+<div class="entidades-grid">
+  <a href="https://ahfcolombia.org.co/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION AHFCOLOMBIA </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+
+</div>
+
+<div class="entidades-grid">
+  <a href="https://fundacionsantafedebogota.com/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION SANTA FE </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+
+</div>
+
+<div class="entidades-grid">
+  <a href="hhttps://www.aidshealth.org/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION AIDSDEALTH </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+
+</div>
+
+<div class="entidades-grid">
+  <a href="hhttps://www.aidshealth.org/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION AIDSDEALTH </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+
+</div>
+
+<div class="entidades-grid">
+  <a href="https://fundacionancla.co/">
+    <div class="icono">💎</div>
+    <h3>FUNDACION NACIONAL </h3>
+    <p> Fundacion prevncion VIH - Colombia</p>
+  </a>
+</div>
+<iframe width="855" height="481" src="https://www.youtube.com/embed/PNadccDpbOc" title="Comprensión del VIH y su tratamiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+</body>
+
+<ol>
+    <li><a href="#info"> INFORMACION </a></li>
+    <li><a href="#test"> TESTIMONIOS </a></li>
+    <li><a href="#video"> VIDEO </a></li>
+    <li><a href="#galeria"> GALERIA </a></li>
+    <li><a href="#enti"> ENTIDADES </a></li>
+</ol>
+
+</html>
+
+

@@ -1,0 +1,88 @@
+/*------------------boton de ejemplo---------------------*/
+.button {   
+    background-color: rgb(245, 242, 242);
+    color: rgb(161, 23, 23);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.button:hover {
+    /*-------------estilo del boton------------------*/
+    background-color: rgb(141, 5, 5);
+    color: rgb(243, 241, 241);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(105, 2, 2);
+}
+
+.slider img {
+  width: 400px;        
+  height: auto;       
+  border-radius: 8px;  
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* PREPARA LA ANIMACIÓN: Hace que cualquier cambio visual tarde 0.3 segundos en completarse */
+}
+
+
+.slider img:hover {
+  width: 400px;        
+  height: auto;       
+  border-radius: 8px; 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px); 
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo :hover{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px); 
+    
+}
+
+.slider{
+  display: flex;
+  align-items: center; 
+  gap: 25px;
+}
+
+
+.fotos-card {
+  align-items: normal;
+  display: flex;
+}
+
+.fotos-card img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  box-shadow: 0px 12px 25px 0px rgba(133, 20, 20, 0.3);
+  transition:transform 0,3s ease;
+}
+
+.fotos-card:hover{
+transition: 0,3s;
+}
