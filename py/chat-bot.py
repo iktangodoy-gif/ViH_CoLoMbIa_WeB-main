@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # API Configuration
-API_KEY = 'sk-183907cf2f924829ab86fc1ff9287216'
+API_KEY = ''
 API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 def enviar_mensaje(mensaje, modelo='deepseek-chat'):
